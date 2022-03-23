@@ -4,7 +4,11 @@
 body {
     color: gray;
 }
-li {
+body > ul > li {
+    color: rgb(4, 197, 4);
+}
+body li, h6 {
+    /* >:자식, 띄어쓰기: 자손 */
     color: teal;
 }
 #leader {
@@ -15,4 +19,20 @@ li {
 }
 .incheon {
     color: darkblue;
-}       
+}
+h1+h2 {
+    /* 마주하는 첫째 자매 */
+    background-color: skyblue;
+}
+h2~h3 {
+    /* 마주하는 모든 자매 */
+    background: aqua;
+}
+
+li:nth-child(2) {
+    /* n번째 자식 */
+    text-decoration: underline;
+}
+[type="passward"] {
+    background-color: chocolate;
+}
