@@ -106,6 +106,44 @@ nav a {
 
 /* nav */
 
+/* HOME */
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 40px;
+    margin: 44px 2rem;
+}
+.card {
+    background-color: #f3f3f3;
+    border-radius: 1rem;
+    /* flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 240px; */
+    flex: 1 0 240px; /* 기본 240px이고 커지면 확장하자 */
+    max-width: 300px; /* 너무 넒지 않게 max 정하자 */
+}
+.card-image {
+    height: 0;
+    padding-bottom: 66.666666666667%;
+    background: url("../img/plate_edit.jpg") center center;
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+.card-description {
+    margin: 1rem;
+}
+.card-title {
+    display: flex;
+    justify-content: center; /* 날짜|식 가운데 정렬 */
+    column-gap: 20px;
+}
+.card-menu {
+    margin-top: 1rem;
+    text-align: center; /* 메뉴 가운데 정렬 */
+}
+
 /* breakpointes */
 /* 2K & 4K */
 
